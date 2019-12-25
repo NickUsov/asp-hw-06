@@ -1,0 +1,51 @@
+﻿@using WebApplication11.Models
+@model WebApplication11.Models.Room
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        table,td{
+            border:1px solid grey;
+            border-collapse:collapse;
+        }
+        td{
+            padding:2px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>QuestRoom</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>@Model.Title</td></tr>
+                <tr><td>@Model.Descript</td></tr>
+                <tr><td>@Model.Time</td></tr>
+                <tr><td>@Model.MinPlayers</td></tr>
+                <tr><td>@Model.MaxPlayers</td></tr>
+                <tr><td>@Model.MinYears</td></tr>
+                <tr><td>@Model.Address</td></tr>
+                <tr><td>@Model.Phones</td></tr>
+                <tr><td>@Model.Email</td></tr>
+                <tr><td>@Model.Company</td></tr>
+                <tr><td>@Model.Rate</td></tr>
+                <tr><td>@Model.Fear</td></tr>
+                <tr><td>@Model.Сomplexity</td></tr>
+                <tr><td>@Model.Logo</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
